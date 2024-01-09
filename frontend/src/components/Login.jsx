@@ -19,7 +19,7 @@ const Login = () => {
       .then(function (response) {
         if ((response.data = "Success")) {
           toast.success("Login successful!");
-          navigate("/home");
+          navigate("/");
         }
 
         setEmail("");

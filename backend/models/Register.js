@@ -6,6 +6,17 @@ const RegisterSchema = new mongoose.Schema({
     password: String
 })
 
+const TodoSchema = new mongoose.Schema({
+    task: String,
+    done: {
+        type: Boolean,
+        default: false
+    }
+  
+})
+
 const RegisterModel = mongoose.model('register', RegisterSchema);
+const TodoModel = mongoose.model('todos', TodoSchema);
 
 module.exports = RegisterModel;
+module.exports = TodoModel;
