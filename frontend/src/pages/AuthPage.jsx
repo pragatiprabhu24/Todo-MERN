@@ -43,18 +43,7 @@ const AuthPage = () => {
             <h2 className="text-3xl font-serif">
               {isLoginForm ? "Sign In" : "Sign Up"}
             </h2>
-            <div class="py-6 space-x-2">
-              <span class="w-10 h-10 items-center justify-center inline-flex rounded-full font-bold text-lg border-2 border-white">
-                f
-              </span>
-              <span class="w-10 h-10 items-center justify-center inline-flex rounded-full font-bold text-lg border-2 border-white">
-                G+
-              </span>
-              <span class="w-10 h-10 items-center justify-center inline-flex rounded-full font-bold text-lg border-2 border-white">
-                in
-              </span>
-            </div>
-            <p class="text-gray-100">or use email your account</p>
+            
             {isLoginForm ? <Login /> : <Register />}
             <div class="text-center text-gray-400 hover:underline hover:text-gray-100 cursor-pointer">
               <a onClick={toggleForm}>

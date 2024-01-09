@@ -8,7 +8,6 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/login" element={<AuthPage />} />
         <Route path="/" element={<Dashboard/>} />
       </Routes>
       <ToastContainer/>

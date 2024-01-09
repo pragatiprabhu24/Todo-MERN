@@ -18,8 +18,10 @@ const Login = () => {
       })
       .then(function (response) {
         if ((response.data = "Success")) {
+          localStorage.setItem("userEmail", response.data.email);
           toast.success("Login successful!");
           navigate("/");
+          console.log(response.data.email);
         }
 
         setEmail("");
