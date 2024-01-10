@@ -24,12 +24,11 @@ const Navbar = () => {
           <nav class="flex justify-between  text-white">
             <div class="px-5 xl:px-12 py-6 flex justify-between w-full items-center">
               <a
-                class="text-xl font-bold font-heading underline text-teal-300"
+                class="text-xl font-normal font-heading underline text-white"
                 href="#"
               >
                 {todayDate}
               </a>
-
             </div>
           </nav>
         </section>

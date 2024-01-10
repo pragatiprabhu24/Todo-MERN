@@ -3,7 +3,7 @@ import { useState } from "react";
 import React from "react";
 import { IoMdAdd } from "react-icons/io";
 import { MdCancelPresentation } from "react-icons/md";
-import {toast} from 'react-toastify'
+import { toast } from "react-toastify";
 
 const CreateTodo = () => {
   const [task, setTask] = useState();
