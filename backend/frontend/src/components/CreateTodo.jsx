@@ -14,7 +14,7 @@ const CreateTodo = () => {
       return;
     }
     axios
-      .post("http://localhost:3001/add", { task: task })
+      .post(`${window.location.origin}/add`, { task: task })
       .then((result) => {
         console.log(result);
         // Reset the task state to clear the input field
